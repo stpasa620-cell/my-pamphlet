@@ -216,8 +216,10 @@ p{margin:0}
 .concept__text p+p{margin-top:1.1em}
 .concept__text{color:var(--muted)}
 .concept__photos{position:relative;display:grid;grid-template-columns:1fr 1fr;gap:18px}
-.concept__photos .ph:first-child{grid-row:span 2;aspect-ratio:3/4.4}
+.concept__photos .ph:first-child{grid-row:span 2;aspect-ratio:auto}
 .concept__photos .ph{aspect-ratio:1/1}
+.concept__photos .ph:first-child{aspect-ratio:auto}
+.concept__photos .ph:first-child .ph__cap{top:12px;bottom:auto}
 .stamp{position:absolute;left:-36px;bottom:-34px;width:128px;height:128px;animation:spin 22s linear infinite}
 .stamp text{font-family:var(--f-en);font-size:11.5px;letter-spacing:.28em;fill:var(--primary);font-weight:600}
 @keyframes spin{to{transform:rotate(360deg)}}
